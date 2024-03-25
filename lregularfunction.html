@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Regular Function</title>
+	</head>
+	<body>
+		<script type ="text/javascript">
+			// User Define Function
+			// 1.Regular Function
+			   // (i)manual function
+			   // (ii)parameter function
+			   //    (a)single parameter function
+			   //    (b)multi parameter function
+			// 2.Arrow Funciton
+			   // (i)manual function
+			   // (ii)parameter function
+			   //    (a)single parameter function
+			   //    (b)multi parameter function
+			//3.Generator Function
+			   //yield
+			   //next()
+
+			// function name(){
+			// 	code to be executed;
+			// }
+
+			// name();//function invoke / function recall
+
+			// (i)manual function
+
+			function greet(){
+				console.log("Hello Myanmar");
+				console.log("Hello Thailand");
+				console.log("Hello Srilanka");
+			}
+
+			greet();
+			greet();
+			greet();
+
+            hello();
+
+			function hello(){
+				console.log("hello yangon");
+			}
+
+			hello();
+
+			function hello(){
+				console.log("hello mandalay");
+			}
+
+			hello();
+
+			function funone(){
+				console.log('i am function one');
+			}
+
+		    function funtwo(){
+		    	funone();
+		    	console.log('i am function two');
+		    	funone();
+		    }
+
+		    function funthree(){
+		    	funtwo();
+		    	funone();
+		    }
+
+		    funthree();
+
+		    //------------------------------------------
+
+		    // RETURN
+
+		    function funfour(){
+		    	console.log(4);
+		    }
+
+		    function funfive(){
+		    	console.log(5);
+		    }
+
+		    funfour();
+		    funfive();
+
+		    function funsix(){
+		    	const num4 = funfour();//4
+		    	const num5 = funfive();//4
+                
+                console.log(num4);//undefined
+                console.log(num5);//undefined
+
+		    	const total = num4+num5;
+		    	console.log(total);
+		    }
+		    funsix();//NaN
+
+   // ------------------------
+		    const infofun = function (name,color){
+		    	console.log(`My name is ${name}.I love ${color}.`);
+
+		    }
+
+		    infofun('aung aung','black');
+
+		    // -----------------
+
+		    // Constructor Function(String Structure)
+
+		    const confunone = new Function("x","return x+10");
+		    console.log(confunone(20));//30
+
+		    const confuntwo = new Function("x","y","z","return x+y+z");
+		    console.log(confuntwo(10,20,30));//60
+
+
+		    // -----------------------
+
+		    // Self Invoking Function
+
+		  (function(){
+		  	console.log("Hello Thailand")
+		  })();
+
+		  (function(name){
+		  	console.log(`Hello ${name}`);
+		  })("Indonesia");
+
+		</script>
+	</body>
+</html>

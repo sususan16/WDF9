@@ -1,0 +1,22 @@
+/*Single Selector*/
+
+h1{color: blue;}
+
+
+
+/*Group Selector(,)*/
+h2,h3,h4{
+	color: green;}
+
+/*	ID Selector*/
+#myself,#hellomdy{color: blue;}
+
+
+#savemm,b{color: red;}
+
+
+
+/*Class Selector*/
+.phone{color: red;}
+
+.lgfont{font-size: 30px;}

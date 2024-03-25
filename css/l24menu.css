@@ -1,0 +1,59 @@
+nav{
+	width: 1200px
+}
+
+nav ul{
+/*	list-style: none;*/
+list-style-type: none;
+
+/*Giving list-style-type can't disappear margin and padding.If we want the margin and padding disappeared,we need to give value of margin and padding 0*/
+
+/*margin: 0;
+padding: 0;*/
+
+/*display: flex;*/
+}
+
+nav ul li{
+/*	list-style: none;*/
+/*	list-style-type: none;*/
+
+/*	display: inline;*/
+width: 250px;
+height: 50px;
+background-color: green;
+
+text-align: center;
+/*To give line-height,just look at height and give the same value*/
+line-height: 50px;
+
+/*display: flex;
+justify-content: center;
+align-items: center;*/
+float: left;
+
+/*float: right;*/
+
+border-left:2px solid #000;
+
+transition: background-color .3s;
+
+
+}
+
+/*nav ul li:last-of-type{
+	border-right: 2px solid #000;
+}*/
+
+nav ul li:first-of-type{
+	border-left: none ;
+}
+
+nav ul li:hover{
+	background-color:orange ;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}

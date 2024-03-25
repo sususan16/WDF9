@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object Literals (Javascript Object)</title>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			let students = {
+				firstname:'Honey',
+				middlename:'Nway',
+				lastname:'Oo',
+				age:22
+
+			};
+			console.info(students);
+			console.table(students);
+			console.log(typeof(students));//object
+
+			console.log(students.firstname);//Honey
+			console.log(students.middlename);//Nway
+			console.log(students.lastname);//Oo
+            console.log(students.age);//22
+
+			console.log(typeof(students.middlename));//string
+			console.log(typeof(students.age));//number
+
+			const persons = {
+				firstname : 'Kyaw Kyaw',
+				lastname : 'Htay Lwin',
+				age : 42,
+				single:false,
+				email:"kyawkyaw@gmail.com",
+
+				address:{
+					street:"62st",
+					city:"Mandalay"
+				},
+
+				hometown:{
+					capital:"Yangon"
+				},
+
+				hobbies:['sleep','eat','code','music','sport']
+
+				
+			};
+
+			console.log(persons);
+			console.table(persons);
+
+			console.log(persons.firstname);
+			console.log(persons.age);
+			console.log(persons.single);
+			console.log(persons.address.street);//62st
+			console.log(persons.address.city);
+			console.log(persons.hometown.capital);//yangon
+			console.log(persons.hobbies[0]);//sleep
+			console.log(persons.hobbies[2]);//code
+			console.log(persons.hobbies[4]);//sport
+
+			console.log(persons.hobbies.length);//5
+			console.log(persons.hobbies[persons.hobbies.length-1]);//sport
+		</script>
+	</body>
+</html>

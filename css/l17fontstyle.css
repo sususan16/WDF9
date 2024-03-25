@@ -1,0 +1,151 @@
+/*Universal Selector*/
+*{
+	cursor: pointer;
+}
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+/*Font Integrate
+(i) Local Machine Integration
+(ii) Global Integration or Project Folder Integration*/
+
+/*(i) Local Machine Integration*/
+
+/*body{
+	font-family:Arial;
+	 }*/
+
+
+	 /*.p1{
+	 	font-family: Arial;
+	 }
+
+	 .p2{
+	 	font-family:"Time New Roman";
+	 }
+
+	 .p3{
+	 	font-family: Century,Arial,"Time New Roman";
+	 }*/
+
+  /*(ii)Global Integration*/
+  /*@-rules*/
+
+/*@font-face{
+	font-family: Stick;
+	src:url('./../fonts/Stick/Stick-Regular.ttf');
+}
+
+@font-face{
+	font-family:abc ;
+	src:local('AkayaTelivigala-Regular'),url('./../fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf') format('woff') ;
+}
+*/
+
+  body{font-family: 'Stick', sans-serif;
+  }
+
+  .p2{
+  	 font-family: 'Akaya Telivigala', cursive;
+  }
+
+
+  .p4{
+       /*font-family:'Akaya Telivigala', stick;*/
+       font-family:abc;
+
+       /*font-weight: bold;*/
+       /*font-weight: bolder;*/
+
+       /*100 to 900*/
+       /*font-weight: 900;*/
+
+       /*font-style: italic;*/
+
+       /*text-transform: uppercase;*/
+       /*text-transform: lowercase;*/
+       /* text-transform: capitalize;*/
+
+       /*Text Identation*/
+         text-indent: 50px;
+
+  }
+
+.clickme{
+	text-decoration: none;
+	color: green;
+}
+
+/*Pseudo class(:)*/
+.clickme:visited{
+	color: violet;
+}
+
+.clickme:hover{
+	color: red;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+.menutext{
+	font-family: Cambria;
+	background-color: green;
+	text-decoration: none;
+	color: #fff;
+/*	padding: 10px;*/
+
+  /*top&bottom left&right*/
+/*padding: 10px 20px;*/
+
+/*top right bottom left*/
+/*padding: 10px 20px 30px 40px;*/
+
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+
+border-radius: 10px;
+/*we should use 'transition' in parent(In .menutext and .menutext:hover,.menutext is parent)*/
+/*transition: all 3s;*/
+/*transition: background-color 5s;*/
+/*transition: background-color 2s,color 5s;*/
+}
+
+.menutext:hover{
+	background-color: orange;
+	color: #000;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	cursor: pointer;
+
+	transition: all 1s;
+}
+
+
+
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+
+}
+
+/*body{
+	cursor: pointer;
+}*/
+
+
+
+

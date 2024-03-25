@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Row and Column</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	</head>
+	<body>
+		
+		<div class="container">
+			<h1>Row and Column</h1>
+		</div>
+
+
+    <div class="container-fluid">
+		<div class="row">
+			<h1 class="bg-primary text-light col-6">Hello Yangon</h1>
+			<h1 class="bg-secondary text-light col-7">Hello Mandalay</h1>
+			<h1 class="bg-success text-light col-3">Hello Bago</h1>
+			<h1 class="bg-info text-light col">Hello Mawlamyine</h1>
+			<h1 class="bg-warning text-light col-10">Hello Yayy</h1>
+			<h1 class="bg-danger text-light col-2">Hello Pyin Oo Lwin</h1>
+		</div>
+	</div>
+
+	<hr/>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="bg-primary col-6 text-light">
+			<div class="row">
+			    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12">Column 1 - div 1</div>
+			    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12">Column 1 - div 2</div>
+			    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12">Column 1 - div 3</div>
+			    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12">Column 1 - div 4</div>
+			    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12">Column 1 - div 5</div>
+			</div>
+		</div>
+
+		<div class="bg-secondary col-6 text-light">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">Column 2 - div 1</div>
+				<div class="col-md-6 col-sm-12">
+				  <div class="row">
+
+					<div class="col-lg-6 col-sm-4">Column 2 - div 2 - div 1</div>
+					<div class="col-lg-6 col-sm-4">Column 2 - div 2 - div 2</div>
+					<div class="col-lg-6 col-sm-4">Column 2 - div 2 - div 3</div>
+					<div class="col-lg-6 col-sm-4">Column 2 - div 2 - div 4</div>
+
+				 </div>
+			   </div>
+			</div>
+		</div>
+	</div>
+		
+</div>
+
+
+		
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	</body>
+</html>
+
+<!-- col-3 means taking space 3 in 12col,so will be 4col. -->

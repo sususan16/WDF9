@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrow Function</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//Regular function(Nameless Function)
+			const regfun1 = function(){
+				const num1 = 100;
+				return num1;
+			}
+			console.log("this is regfun1 =" + regfun1());//this is regfun1 =100
+
+			//Arrow Function
+			const arrfun1 = ()=>{
+				const num1 = 100;
+				return num1;
+			}
+			console.log("this is arrfun1 = " + arrfun1());//this is arrfun1 = 100
+            
+            //Single Parameter Function
+
+            const arrfun2 = (num1)=>{
+            	return num1;
+            }
+            console.log("this is arrfun2 = " + arrfun2(20));
+
+            
+
+            // For single parameter,we can write without round brackets,()!
+            const arrfun3 = num1=>{
+            	return num1;
+            }
+            console.log("this is arrfun3 = " + arrfun3(30));
+
+
+
+            // For only one function, we can write single line and don't need round brackets,return & curly brackets!
+            const arrfun4 = num1=> num1 + 50;
+            console.warn("this is arrfun4 = " + arrfun4(100));//this is arrfun4 = 150
+
+
+            //Multi Parameter Function
+
+            const multiarrfun1 = (num1,num2)=>{
+            	const result = num1 + num2;
+            	return result;
+            }
+            console.log("this is multiarrfun1 =" + multiarrfun1());//this is multiarrfun1 =NaN
+            console.log("this is multiarrfun1 =" + multiarrfun1(10,20));//this is multiarrfun1 =30
+
+
+            const multiarrfun2 = (num1 = 100,num2 = 200)=>{
+            	const result = num1 + num2;
+            	return result;
+            }
+
+            console.log("this is multiarrfun2 = " + multiarrfun2(10,20)); //this is multiarrfun2 = 30
+            console.log("this is multiarrfun2 = " + multiarrfun2(10)); //this is multiarrfun2 = 210
+
+           
+		</script>
+	</body>
+</html>

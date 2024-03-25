@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			let arrgirls = new Array("su su","lu lu",'hla hla');
+
+			console.info(arrgirls);
+			console.table(arrgirls);
+			console.log(arrgirls.length);//3
+
+			const arrboys = ['maung maung','naung naung','kyaw gyi','zaw zaw',200];
+			console.info(arrboys);
+			console.table(arrboys);
+			console.log(arrboys.length);//4
+			console.log(typeof(arrboys));//object
+
+			console.log(arrboys[0]);
+			console.log(arrboys[2]);
+			console.log(arrboys[3]);
+			console.log(typeof(arrboys[3]));//string
+			console.log(arrboys[4]);
+			console.log(typeof(arrboys[4]));//number
+
+			console.log(arrboys[arrboys.length-3]);//kyaw gyi 5-3=2 arrboys[2]
+
+			let y = ["hello",1500,true,undefined,null,new Date(),['red','green'],{firstname:'kyaw kyaw',city:"Yangon"}];
+
+			console.log(y);
+			console.log(y.length);
+			console.log(y[0]);
+			console.log(y[5]);//Thu Jul 27 2023 20:37:24 GMT+0630 (Myanmar Time)
+			console.log(y[6]);//(2)['red','green']
+			console.log(y[6][1]);//green
+			console.log(y[7]);
+			console.log(y[7].firstname);//kyaw kyaw
+			console.log(y[7].city);//Yangon
+
+
+			let colors = ["red","green","blue"];
+			    colors = ["rgba","cmyk","black"];
+			console.log(colors);//(3)['rgba', 'cmyk', 'black']
+
+
+			let paints = [];
+
+			paints[3] = "white";
+			paints[0] = "black";
+			paints[1] = "blue";
+			paints[2] = "pink";
+			paints[1] = "violet";
+			paints[5] = "steelblue";
+			paints[9] = "grey";
+
+			console.log(paints);
+
+			let animals = ['cat','dog'];
+			    animals[2] ='owl';
+			    animals[5] = 'fish';
+			    animals[3] = 'tiger';
+			    animals[0] = 'crow';
+
+			    console.log(animals);
+			    console.log(animals[0]);//crow
+			    console.log(animals[3]);//tiger
+			    console.log(animals[4]);//undefined
+
+			    //=> Nested Array
+			    const nestarrs = [
+			    	['red','green','blue'],
+			    	['cmyk','rgb','hsla'],
+			    	['canon','epson',['laser','ink']]
+			    	];
+
+			    console.log(nestarrs);
+			    console.log(nestarrs[0][0]);//red
+			    console.log(nestarrs[0][2]);//blue
+			    console.log(nestarrs[1][2]);//hsla
+			    console.log(nestarrs[2][1]);//epson
+			    console.log(nestarrs[2][2][1]);//ink
+
+		</script>
+	</body>
+</html>

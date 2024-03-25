@@ -1,0 +1,64 @@
+/*Pseudo Class(:)*/
+
+.div1{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}
+/*.div1:first-child{
+	background-color: orange;
+	color: blue;
+}*/
+
+/*Even putting <hr/> can stop being affected.Be careful*/
+/*.div1:last-child{
+	background-color: gray;
+	color: blue;
+}*/
+
+/*It affects same type of it*/
+/*.div1:first-of-type{
+	background-color: orange;
+	color: blue;
+}*/
+
+/*.div1:last-of-type{
+	background-color: gray;
+	color: blue;
+}*/
+
+/*Even putting <hr/> can stop being affected.Be careful*/
+/*nth-child() have number,even and odd*/
+/*.div1:nth-child(5){
+	background-color: blue;
+	color:#fff;
+}*/
+
+/*.div1:nth-child(even){
+	background-color: orange;
+	color: gray;
+}*/
+
+/*.div1:nth-child(odd){
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+/*
+.div1:nth-of-type(5){
+	background-color: blue;
+	color: #fff;
+}*/
+
+/*.div1:nth-of-type(even){
+	background-color: blue;
+	color:#fff;
+}*/
+
+
+/*.div1:nth-of-type(odd){
+	background-color: blue;
+	color: #fff;
+}*/
+

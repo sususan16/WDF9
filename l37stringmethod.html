@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>String Method</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			let firstname = "Mya Hnin";
+			let lastname = " Yee Lwin";
+
+			console.log(firstname);
+			console.log(lastname);
+			console.log(firstname,lastname);
+			console.log(firstname.length);
+            
+            //Concat (+)
+			let fullname = firstname+" "+lastname;
+
+			//=> string.concat(string)
+			console.log(fullname);
+			console.log(firstname.concat(lastname));
+
+			//Append (+=)
+			let name1 = "Honey Nway";
+			let name2 = "Oo";
+
+			console.log(name1+name2);//Honey NwayOo
+			console.log(name1.concat(name2));//Honey NwayOo
+
+			name1 += name2;
+			console.log(name1);//Honey NwayOo
+
+			let num1 = 10;
+			let num2 = 20;
+
+			num2 += num1;
+			console.log(num2);//30
+
+			//String is Character Array in Js
+
+			let myfriend = "Aung Ko Ko";
+			console.log(myfriend);//Aung Ko Ko
+			console.log(typeof(myfriend));//string
+			console.log(myfriend.length);//10
+
+			console.log(myfriend[0]);//A
+			console.log(myfriend[3]);//g
+			console.log(myfriend[4]);
+			console.log(typeof myfriend[4]);//string
+			console.log(myfriend[myfriend.length-1]);//0
+
+			//charAt()
+			const nickname = "Aung Kyaw Kyaw";
+			console.log(nickname[5]);//K
+			console.log(nickname.charAt(5));//K
+            console.log(nickname.charAt(nickname.length-1));
+
+            //includes()
+            let favcolor = "My Fav color is black color";
+            console.log(favcolor.includes("black"));//true
+            console.log(favcolor.includes("red"));//false
+            console.log(favcolor.includes("Black"));//false
+            console.log(favcolor.includes("BLACK"));//false
+            console.log(favcolor.includes("bla"));//true
+
+            //replace(old,new);
+            console.log(favcolor.replace("black","*****"));
+            console.log(favcolor.replace("black","blue"));//My Fav color is blue color
+            console.log(favcolor.replace("bla","red"));//My Fav color is redck color
+            console.log(favcolor.replace("color","colour"));//My Fav colour is black color
+
+            //substring(index,length)
+            console.log(favcolor.substring(0,10) + "...");
+            console.log(favcolor.substring(0,10).concat("......"));
+
+            //Change Case
+
+            console.log(favcolor.toLowerCase());//my fav color is black color
+            console.log(favcolor.toUpperCase());//MY FAV COLOR IS BLACK COLOR
+
+		</script>
+	</body>
+</html>

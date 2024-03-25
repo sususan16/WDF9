@@ -1,0 +1,144 @@
+:root{
+	--gn:green;
+	--oc:orange;
+	--rc:red;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color:var(--gn);
+/*	rotate(xy)*/
+/*transform: rotate(45deg);*/
+transform: rotate(-45deg);
+}
+
+.div2{
+	width: 100px;
+	height: 80px;
+	background-color:var(--oc);
+/*	rotate(xy)*/
+/*transform: rotate(1turn);*/
+transform: rotate(-45deg);
+}
+
+.div3{
+	width: 100px;
+	height: 80px;
+	background-color:var(--rc);
+/*	rotateX(x)*/
+
+transform: rotateX(50deg);
+}
+
+.div4{
+	width: 100px;
+	height: 80px;
+	background-color:var(--gn);
+/*	rotateY(y)*/
+
+transform: rotateY(50deg);
+
+}
+
+.div5{
+	width: 200px;
+	height: 200px;
+	background-color:var(--oc);
+/*default 1*/
+/*scale(xy)*/
+/*	transform: scale(0);*/
+/*transform: scale(1);*/
+/*transform: scale(1.5);*/
+/*transform: scale(0.5);*/
+
+}
+
+
+.div6{
+	width: 200px;
+	height: 200px;
+	background-color:var(--gn);
+
+	transform: skew(20deg);
+/*	transform: skew(-20deg);*/
+
+}
+
+.div7{
+	width: 200px;
+	height: 200px;
+	background-color:var(--oc);
+
+/*translate(x)*/
+/*Just translate,works for X axis.*/
+/*To relocate,just see the width.If we want to relocate double from parent position,give 200px/100% in translate.*/
+
+/*	transform: translate(100px);*/
+/*transform: translate(50px);*/
+
+/*Start from parent position*/
+/*transform: translate(100%);*/
+
+/*transform: translate(-50%);*/
+/*transform: translate(-100%);*/
+
+/*translate=translateX*/
+
+/*transform: translateX(100px);*/
+/*transform: translateX(-100px);*/
+
+/*transform: translateY(50%);*/
+/*transform: translateY(100%);*/
+/*transform: translateY(-50%);*/
+/*transform: translateY(-100%);*/
+}
+
+.div8{
+	width: 200px;
+	height: 200px;
+	background-color:var(--gn);
+/*       translate(x,y)*/
+/*	transform: translate(50%,50%);*/
+/*	transform: translate(-50%,50%);*/
+/*    transform: translate(50%,-50%);*/
+
+
+transform: translateX(50%) translateY(-50%);
+}
+
+h1{
+	text-align: center;
+	color: green;
+}
+
+p.text{
+	text-align: center;
+	color: red;
+	user-select: none;
+}
+ 
+/* To view width in screen,tap right click,tap inspect.*/
+@media(max-width:600px){
+	h1{
+		color: red;
+		font-size: 20px;
+	}
+
+	p.text{
+		color: green;
+	}
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+

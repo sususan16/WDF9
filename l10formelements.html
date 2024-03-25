@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+	<h3>Form Elements</h3>
+	<fieldset>
+		<legend>This is a html form</legend>
+	<form action="" method="" enctype="multipart/form-data">
+		<label for="firstname">First Name:</label>
+		<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name" autofocus /><br/>
+		<label for="lastname">Last Name:</label>
+<input type="text" name="lastname" id="lastname" class="" minlength="3" maxlength="6" required placeholder="Enter your last name"/><br/>
+
+		<label for="age">Age:</label>
+<input type="number" name="age" id="age" class="" placeholder="Enter your age" min="18" max="100" /><br/>
+
+		<label for="email">Email:</label>
+<input type="email" name="email" id="email" class="" placeholder="Enter your email" /><br/>
+
+<label for="pw">Password:</label>
+<input type="password" name="password" id="pw" class="" placeholder="Enter your password" /><br/>
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" id="m" class="" value="m" checked /><label for="m">Male</label>
+<input type="radio" name="gender" id="fm" class="" value="f" /><label for="fm">Female</label>
+<input type="radio" name="gender" id="ot" class="" value="o" /><label for="ot">Other</label><br/>
+
+<label>Fruit:</label>
+<input type="radio" name="fruit" id="a" class="" value="1" /><label for="a">Apple</label>
+<input type="radio" name="fruit" id="o" class="" value="0" /><label for="o">Orange</label>
+<input type="radio" name="fruit" id="p" class="" value="2" /><label for="p">Pineapple</label><br/>
+<label>Choose your fav colors:</label>
+<input type="checkbox" name="fc" id="r" class="" value="0" /><label for="r">Red</label>
+<input type="checkbox" name="fc" id="g" class="" value="1" /><label for="g">Green</label>
+<input type="checkbox" name="fc" id="b" class="" value="2" /><label for="b">Blue</label><br/>
+
+<label>Volume</label>
+<input type="range" name="volume" id="volume" class="" min="0" max="100"/><br/>
+
+<label for="bio">Bio</label>
+<textarea name="bio" id="bio" class="" rows="5" placeholder="Write Something..."></textarea>
+</form></fieldset><br/>
+
+
+
+<input type="hidden" name="abc" id="abc" class=""/><br/><br/>
+
+<input type="reset" name="reset" id="reset" class="" value="Reset"/>
+<input type="submit" name="register" id="register" class="" value="Register" />
+<input type="button" name="login" id="login" class="" value="Login" />
+<button name="signup" id="signup" class="">Sign Up</button>
+
+<label>Citizen:</label>
+<select name="country" id="country" class="">
+	<option selected disabled>Choose country</option>
+	<option value="mm">Myanmar</option>
+	<option value="thd">Thailand</option>
+	<option value="php">Philippines</option>
+	<option value="slk">Sirilanka</option>
+</select><br/>
+
+<label for="role">Role</label>
+<select name="role" id="role" class="" multiple>
+	<option value="1">Manager</option>
+	<option value="2">Editor</option>
+	<option value="3">Supervisor</option>
+	<option value="4">Sales</option>
+</select>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" name="dateofbirth" id="dob" class=""/><br/>
+
+<label for="bt">Booking Time:</label>
+<input type="time" name="bookingtime" id="bt" class=""/><br/>
+
+<label for="ap">Appointment:</label>
+<input type="datetime-local" name="appointment" id="ap" class=""/><br/>
+
+
+
+<h3>File Attachment</h3>
+<label for="nrc">NRC:</label>
+<input type="file" name="nrc" id="nrc" class=""accept="image/*" capture="user" multiple><br/>
+
+
+<label for="vd">Video:</label>
+<input type="file" name="video" id="vd" class=""accept="video/*" capture="environment"><br/>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

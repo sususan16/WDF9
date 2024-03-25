@@ -1,0 +1,39 @@
+.textalign{
+/*	text-align:left;}*/
+/*text-align: right;*/
+text-align:justify; }
+
+.textdecoration{
+/*	text-decoration: underline;*/
+/*text-decoration: overline;*/
+text-decoration: line-through;}
+
+a{text-decoration: none;}
+
+.textline{
+/*	letter-spacing: 5px;*/
+
+line-height: 30px;
+/*line-height: 30;*/
+/*line-height: 300%;*/
+}
+
+
+.textshadow{
+/*	h v b c*/
+/*hoz vtl blur color*/
+
+
+/*text-shadow: 50px 0px 3px red;*/
+/*text-shadow: -50px 0px 3px blue;*/
+
+/*text-shadow: 0 10px 5px red;*/
+/*text-shadow: 0 -20px 5px red;*/
+
+/*text-shadow: 5px 5px 3px red;*/
+/*text-shadow: -5px -5px 3px red;*/
+
+/*text-shadow: -5px -5px 3px #7863d6;*/
+/*	text-shadow: -5px -5px 3px rgba(222, 30,237,0.82);*/
+text-shadow: 5px 0 3px red,0 5px 3px yellow,0 5px 5px blue;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Intro</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			console.log("aung aung");
+			console.log('zaw zaw');
+			console.log(`kyaw kyaw`);
+
+			console.log(500);
+			console.log("600");
+			console.log('700');
+			console.log(`800`);
+
+			console.log("aung aung","zaw zaw","maung maung");
+			console.log(100,200,300,400);
+			console.log("aung aung",500);
+
+			console.log(true);
+			console.log(false);
+
+			console.log(10+10);//20
+			console.log(10+"40");//1040
+			console.log('20'+"50");//2050
+			console.log("aung aung"+20);//aung aung20
+
+			console.log(true+true);//2
+			console.log(true+false);//1
+			console.log(true+50);//51
+			console.log(false+50);//50
+			console.log('true'+50);//true50
+			console.log('aung aung'+true);//aung aungtrue
+			console.log(false+"zaw zaw");//falsezaw zaw
+
+
+			//Comments
+
+			//Single line Comment
+
+			/*Multi Line Comment
+			Multi Line Comment*/
+
+
+			//window.alert("Hello Myanmar");
+			//window.alert("Save Myanmar");
+			//alert(`Are you ready to learn JS?`)
+
+			//Variable(var / let/const)
+
+			//var/let/const variablename = value;
+
+			var fullname = "Aung Kyaw Kyaw";
+
+			console.log("fullname");//fullname
+			console.log('fullname');//fullname
+			console.log(`fullname`);//fullname
+			console.log(fullname);//Aung Kyaw Kyaw
+
+			//window.alert(fullname);
+
+			console.log("My friend name is fullname");//My friend name is fullname
+
+			console.log('My friend name is fullname');//My friend name is fullname
+
+			console.log(`My friend name is fullname`);//My friend name is fullname
+
+            // Concatenate(+)
+			console.log('My friend name is' + fullname);//My friend name is Aung Kyaw Kyaw
+
+			console.log('My friend name is'+' '+fullname);//My friend name is Aung Kyaw Kyaw
+
+
+			//Backticks(``)
+
+			var lady = "Honey Nway Oo";
+			console.log(`We love lady`);//We love lady
+			console.log(`${lady}`)//Honey Nway Oo
+			console.log(`We love ${lady}`);//We love Honey Nway Oo
+
+
+			//Concatenate(+)
+
+			const name1 = "Kyal Sin";
+			const name2 = "Kyar Shi";
+
+			//console.log(name1,name2);
+
+			console.log("My name is"+" "+name1+"."+"You can call me"+" "+name2+".");//My name is Kyal Sin.You can call me Kyar Shi.
+
+			console.log(`My name is ${name1}.You can call me ${name2}.`);//My name is Kyal Sin.You can call me Kyar Shi.
+
+			var num1 = 100;
+			const num2 = 200;
+			console.log(num1);
+			console.log(num2);
+			console.log(num1,num2);
+			console.log(num1+num2);//300
+
+			console.log("num1+num2");//num1+num2
+			console.log('num1+num2');//num1+num2
+			console.log(`num1+num2`);//num1+num2
+
+			console.log(`${num1+num2}`);//300
+			console.log(`${num1}+${num2}`);//100+200
+			console.log(`100`+`200`);//100200
+
+
+			//Overwrite or Override(var and let can override / const can't override)
+			var num3 = 30;
+			var num4 = 40;
+
+			console.log("num3 value is = " + num3);//num3 value is = 30
+			console.log("num4 value is = " + num4);
+			//num4 value is = 40
+			console.log(num3+num4);//70
+
+			num3 = 50;
+			console.log("num3 value is =" + num3);//num3 value is = 50
+			console.log(num3+num4);//90
+
+			let num5 = 50;
+			console.log(num5);//50
+
+			num5 = 500;
+			console.log(num5);//500
+
+			num5 = 5000;
+			console.log(num5);//5000
+
+			var num6 = 60;
+			console.log(num6);//60
+
+			num6 = 600;
+			console.log(num6);//600
+
+			num6 = 6000;
+			console.log(num6);//6000
+
+			const num7 = 70;
+			console.log(num7);//70	
+
+
+			//Special Escape Characters(\)
+
+			console.log("Hay i am working.do you see now.");
+			console.log("Hay i am 'working'.do you see now.")
+			console.log('Hay i am "working".do you see now.');
+
+			//console.log("Hay i am "working".do you see now.");//error
+			//console.log('Hay i am 'working'.do you see now.');//error
+
+
+			console.log("Hay i'm working and i'm reading. do you see now.");//Hay i'm working and i'm reading. do you see now.
+			console.log('He is very tall. about 6ft 4"');//He is very tall. about 6ft 4"
+
+
+			let x = 'He\'s U Ba.';
+			let y = "He\'s my \"Uncle\".";
+			console.log(`${x} ${y}`);//He's U Ba. He's my "Uncle".
+
+       document.write(`${x} ${y}`);//He's U Ba. He's my "Uncle".
+
+
+
+
+
+
+			
+			
+
+
+		</script>
+	</body>
+</html>
+
+<!-- Js Integrate HTML
+
+Internal
+External
+Inline -->
+
+<!-- Data Type
+
+String
+Number
+Boolean -->
+
+<!-- Variable Name
+
+We can use 
+letter,number,_,$
+var firstname <- i recommend to use this
+var firstName
+var first_name
+var $firstname
+var number1 <- i recommend to use this
+
+We can't name 
+var first name
+var first-name
+var @firstname -->
